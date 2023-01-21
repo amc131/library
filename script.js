@@ -11,13 +11,6 @@ const bookCardWrapper = document.querySelector('.book-card-wrapper');
 
 const myLibrary = [];
 
-// function Book(title, author, pages, read) {
-//   this.title = title;
-//   this.author = author;
-//   this.pages = pages;
-//   this.read = read;
-// }
-
 class Book {
   constructor(title, author, pages, read) {
     this.title = title;
@@ -32,12 +25,6 @@ const addBookToLibrary = () => {
   myLibrary.push(newBook);
   console.log(newBook.read);
 };
-
-// const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, true);
-// const dune = new Book('Dune', 'Frank Herbert', 412, false);
-
-// myLibrary.push(theHobbit);
-// myLibrary.push(dune);
 
 button.addEventListener('click', () => {
   addBookForm.style.display = 'inline';
